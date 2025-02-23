@@ -1,0 +1,6 @@
+; Filename: ELWWHO_LIB.DEF
+LIBRARY ELWWHO.DLL
+; *** Visual Studio 2022 EXPORT ALIASES ONLY ***
+; Who's On - Copyright (c) 2025 Elwynor Technologies
+EXPORTS
+    init__elwwho=_init__elwwho	@1

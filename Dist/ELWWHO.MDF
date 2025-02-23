@@ -1,0 +1,31 @@
+; ELWWHO.MDF
+
+Module Name: Who's On
+
+UNCONDITIONAL
+INTERNAL
+
+Developer: Elwynor Technologies
+
+Requires:
+Replaces:
+
+Install:
+
+Online user manual: 
+
+DLLs: ELWWHO
+MSGs: ELWWHO
+
+Btrieve page size: 1024
+Btrieve files:     0
+
+Cleanup:
+
+Event-1:
+Event-2:
+Event-3:
+Event-4:
+
+Add-On Utility:
+

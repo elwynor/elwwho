@@ -1,0 +1,303 @@
+
+LEVEL4 {Elwynor: Who's On}
+
+  This option lets you choose whether or not to
+  show a Who's On listing at user login.
+
+SHOWLON {Show a user online listing at login? YES} B
+
+  Which of the (up to) four listing formats would
+  you like to use for the logon listing. This 
+  option also defines the listing for the main
+  menu option, should you add this to your menu.
+
+WHICHLST {Which listing message would you like to use for logon? 1} N 1 4
+
+  This sets the Global Command prefix.  For example
+  if this is set to the % character, all commands
+  start with %, like %#1 for show listing 1
+
+GLOCHR {Global command prefix character: %} C
+
+  This sets the first of up to five text strings
+  to use as a filter-out for modules. For example,
+  if you want to filter out MajorMUD users, you
+  can put MajorMUD here. Leave blank if you don't
+  want any filter-out.
+
+FILTER1 {MajorMUD} S 25 First text string to use as a module filter-out
+
+  This sets the second of up to five text strings
+  to use as a filter-out for modules. For example,
+  if you want to filter out MajorMUD users, you
+  can put MajorMUD here. Leave blank if you don't
+  want any filter-out.
+
+FILTER2 {HellaMUD} S 25 Second text string to use as a module filter-out
+
+  This sets the third of up to five text strings
+  to use as a filter-out for modules. For example,
+  if you want to filter out MajorMUD users, you
+  can put MajorMUD here. Leave blank if you don't
+  want any filter-out.
+
+FILTER3 {} S 25 Third text string to use as a module filter-out
+
+  This sets the fourth of up to five text strings
+  to use as a filter-out for modules. For example,
+  if you want to filter out MajorMUD users, you
+  can put MajorMUD here. Leave blank if you don't
+  want any filter-out.
+
+FILTER4 {} S 25 Fourth text string to use as a module filter-out
+
+  This sets the fifth of up to five text strings
+  to use as a filter-out for modules. For example,
+  if you want to filter out MajorMUD users, you
+  can put MajorMUD here. Leave blank if you don't
+  want any filter-out.
+
+FILTER5 {} S 25 Fifth text string to use as a module filter-out
+
+LEVEL6 {Elwynor: Who's On}
+
+  This is the help message when someone just types
+  the global character or the character plus ?
+  
+  It uses the WHO_GLOCHAR text variable.
+
+WHOHELP {
+
+The Who's Online listing provided by the N*WHO_GLOCHARcommand lets you
+view who's online without seeing users in certain modules. This filter
+is set by your SysOp, but you can filter it yourself too with a 
+custom filter. Here's the full rundown:
+
+  N*WHO_GLOCHAR? ... this message
+  N*WHO_GLOCHAR# ... the who's on listing, filtered - # is 1-4
+  N*WHO_GLOCHARE# <1-25 char string> ... extend filter to add <string>, # is view
+  N*WHO_GLOCHARF# <1-25 char string> ... your filter by <string> only, # is view
+  N*WHO_GLOCHARU# ... unfiltered who's on listing
+
+} T Text of the Globals Help
+
+  This is the first of up to four who's on listings.
+  This is the header (displays BEFORE the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+    WHO_SYSLOAD    - system load information
+
+LISTHDR1 {{[0m[2J
+[1;47mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[30m¿[40mÜ
+[37;47m³### [36mHandle            [0;36;47mAge [32mSex [1mTime [37mClass     [33mBaud   [37mLocation On-Line   [31mFlags[30m³[40mÛ
+[37;47mÀ[30mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[40mÛ
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+} T First who's online listing format header
+
+  This is the second of up to four who's on listings.
+  This is the header (displays BEFORE the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+    WHO_SYSLOAD    - system load information
+
+LISTHDR2 {[0m[2J
+[1;36;46mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[0;34;46m¿[1;36;40mÜ
+[46m³[37;44mCH[36;46m [37;44mUser-Id              [36;46m [37;44mSex   [36;46m [37;44mAge[36;46m [37;44mBaud  [36;46m [37;44mFlags      [36;46m [37;44mCalling From         [0;34;46m³[1;36;40mÛ
+[46mÀ[0;34;46mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;36;40mÛ
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+} T Second who's online listing format header
+
+  This is the third of up to four who's on listings.
+  This is the header (displays BEFORE the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+    WHO_SYSLOAD    - system load information
+
+LISTHDR3 {[0m
+[36mÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+[37mCH User-ID         Location Online            Connected From
+[36mÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+} T Third who's online listing format header
+
+  This is the fourth of up to four who's on listings.
+  This is the header (displays BEFORE the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+    WHO_SYSLOAD    - system load information
+
+LISTHDR4 {[0m
+[1;30mÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍ  [0;36mÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍ
+[37mCHN User-ID                      S/AGE  CHN User-ID                      S/AGE
+[1;30mÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍ  [0;36mÍÍÍ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍÍÍ
+} T Fourth who's online listing format header
+
+  This is the first of up to four who's on listings.
+  This is the line by line format
+  
+  It uses the following text variables:
+    WHO_USERID     - the user's username
+    WHO_CHANNEL    - channel connected to
+    WHO_AGE        - user's age
+    WHO_GENDERCHAR - gender (M or F)
+    WHO_GENDERFULL - gender (Male or Female)
+    WHO_TIMEONLINE - time online in minutes
+    WHO_LOCATION   - user's address location (City)
+    WHO_FLAGCHAR   - flags (SABI - always 4 chars)
+    WHO_FLAGSTRING - flags (Sys/AFK/Bsy/Inv - up to 15 chars)
+    WHO_BAUD       - connection speed
+    WHO_CLASS      - class the user is in
+    WHO_MODULEIN   - module location (filtered!)
+
+LISTLIN1 {[0;1m [32mL"WHO_CHANNEL  [0mN!OL1WHO_USERIDN!X[36mL#WHO_AGE [37m([32mL!WHO_GENDERCHAR[37m) [1;32mL$WHO_TIMEONLINE [37mL)WHO_CLASS [33mL&WHO_BAUD [37mL2WHO_MODULEIN [31mL$WHO_FLAGCHAR
+} T First who's online listing format user line
+
+  This is the second of up to four who's on listings.
+  This is the line by line format
+  
+  It uses the following text variables:
+    WHO_USERID     - the user's username
+    WHO_CHANNEL    - channel connected to
+    WHO_AGE        - user's age
+    WHO_GENDERCHAR - gender (M or F)
+    WHO_GENDERFULL - gender (Male or Female)
+    WHO_TIMEONLINE - time online in minutes
+    WHO_LOCATION   - user's address location (City)
+    WHO_FLAGCHAR   - flags (SABI - always 4 chars)
+    WHO_FLAGSTRING - flags (Sys/AFK/Bsy/Inv - up to 15 chars)
+    WHO_BAUD       - connection speed
+    WHO_CLASS      - class the user is in
+    WHO_MODULEIN   - module location (filtered!)
+
+LISTLIN2 {[0;1m [32mL"WHO_CHANNEL [0mN!OL5WHO_USERIDN!X[1mL&WHO_GENDERFULL [33mL#WHO_AGE [37mL&WHO_BAUD [33mL+WHO_FLAGSTRING [32mL5WHO_LOCATION
+} T Second who's online listing format user line
+
+  This is the third of up to four who's on listings.
+  This is the line by line format
+  
+  It uses the following text variables:
+    WHO_USERID     - the user's username
+    WHO_CHANNEL    - channel connected to
+    WHO_AGE        - user's age
+    WHO_GENDERCHAR - gender (M or F)
+    WHO_GENDERFULL - gender (Male or Female)
+    WHO_TIMEONLINE - time online in minutes
+    WHO_LOCATION   - user's address location (City)
+    WHO_FLAGCHAR   - flags (SABI - always 4 chars)
+    WHO_FLAGSTRING - flags (Sys/AFK/Bsy/Inv - up to 15 chars)
+    WHO_BAUD       - connection speed
+    WHO_CLASS      - class the user is in
+    WHO_MODULEIN   - module location (filtered!)
+
+LISTLIN3 {[0m[1;32mL"WHO_CHANNEL [0mN!OL/WHO_USERIDN!X[1;33mL:WHO_MODULEIN [37mLAWHO_LOCATION
+[0m} T Third who's online listing format user line
+
+  This is the fourth of up to four who's on listings.
+  This is the line by line format
+  
+  It uses the following text variables:
+    WHO_USERID     - the user's username
+    WHO_CHANNEL    - channel connected to
+    WHO_AGE        - user's age
+    WHO_GENDERCHAR - gender (M or F)
+    WHO_GENDERFULL - gender (Male or Female)
+    WHO_TIMEONLINE - time online in minutes
+    WHO_LOCATION   - user's address location (City)
+    WHO_FLAGCHAR   - flags (SABI - always 4 chars)
+    WHO_FLAGSTRING - flags (Sys/AFK/Bsy/Inv - up to 15 chars)
+    WHO_BAUD       - connection speed
+    WHO_CLASS      - class the user is in
+    WHO_SYSLOAD    - system load information
+    WHO_MODULEIN   - module location (filtered!)
+
+LISTLIN4 {[0;1;32mL"WHO_CHANNEL  [0mN!OL<WHO_USERIDN!X[1;35mL!WHO_GENDERCHAR[0m/[1;33mL#WHO_AGE  } T Fourth who's online listing format user line
+
+  This is the first of up to four who's on listings.
+  This is the footer (displays AFTER the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+
+LISTFTR1 {[0;1;30mÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+Û[37;47mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[30m¿[0m
+[1;30mÛ[37;47m³ [0;30;47mSystem loading performance: [1;33mL%WHO_SYSLOAD   [0;34;47mAverage AGE of users shown above: [1;36mL#WHO_AVGAGE  [30m³[0m
+[1;30mß[37;47mÀ[30mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[0m
+} T First who's online listing format footer
+
+  This is the second of up to four who's on listings.
+  This is the footer (displays AFTER the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+
+LISTFTR2 {[0;1;36mÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+Û[46mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[0;34;46m¿[37;40m
+[1;36mÛ[46m³ [0;30;46mSystem loading performance: [1;33mL%WHO_SYSLOAD   [34mAverage AGE of users shown above: [0;35;46mL#WHO_AVGAGE  [34m³[37;40m
+[1;36mß[46mÀ[0;34;46mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[37;40m
+} T Second who's online listing format footer
+
+  This is the third of up to four who's on listings.
+  This is the footer (displays AFTER the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+
+LISTFTR3 {[0;36mÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+} T Third who's online listing format footer
+
+  This is the fourth of up to four who's on listings.
+  This is the footer (displays AFTER the user lines)
+
+  It uses the following text variables:
+    WHO_AVGAGE     - average age of displayed users
+    WHO_AVGAGEALL  - average age of all users, regardless of filter
+    WHO_DAYNAME    - name of the current day of the week
+    WHO_CURDATE    - current date in Monthname DD, YYYY format
+    WHO_CURTIME    - current time in HH:MM:SS ?M format
+    WHO_LINESINUSE - current number of lines in use, total
+
+LISTFTR4 {[0m
+[1m<<end>>
+} T Fourth who's online listing format footer
+  
+NOFILTER {
+  Sorry, you have to include a string of 1-25 characters to use N*WHO_GLOCHARE# or N*WHO_GLOCHARF#
+} T User didn't include a string to filter by
