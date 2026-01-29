@@ -95,7 +95,7 @@ custom filter. Here's the full rundown:
 
 LISTHDR1 {{[0m[2J
 [1;47mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[30m¿[40mÜ
-[37;47m³### [36mHandle            [0;36;47mAge [32mSex [1mTime [37mClass     [33mBaud   [37mLocation On-Line   [31mFlags[30m³[40mÛ
+[37;47m³### [36mHandle           [0;36;47mAge [32mSex [1mTime [37mClass     [33mBaud   [37mLocation On-Line   [31mFlags[30m³[40mÛ
 [37;47mÀ[30mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[40mÛ
  ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
 } T First who's online listing format header
@@ -192,7 +192,7 @@ LISTLIN1 {[0;1m [32mL"WHO_CHANNEL  [0mN!OL1WHO_USERIDN!X[36mL#WHO_A
     WHO_CLASS      - class the user is in
     WHO_MODULEIN   - module location (filtered!)
 
-LISTLIN2 {[0;1m [32mL"WHO_CHANNEL [0mN!OL5WHO_USERIDN!X[1mL&WHO_GENDERFULL [33mL#WHO_AGE [37mL&WHO_BAUD [33mL+WHO_FLAGSTRING [32mL5WHO_LOCATION
+LISTLIN2 {[0;1m [32mL"WHO_CHANNEL [0mN!OL5WHO_USERIDN!X [1mL&WHO_GENDERFULL [33mL#WHO_AGE [37mL&WHO_BAUD [33mL+WHO_FLAGSTRING [32mL5WHO_LOCATION
 } T Second who's online listing format user line
 
   This is the third of up to four who's on listings.
@@ -212,7 +212,7 @@ LISTLIN2 {[0;1m [32mL"WHO_CHANNEL [0mN!OL5WHO_USERIDN!X[1mL&WHO_GEN
     WHO_CLASS      - class the user is in
     WHO_MODULEIN   - module location (filtered!)
 
-LISTLIN3 {[0m[1;32mL"WHO_CHANNEL [0mN!OL/WHO_USERIDN!X[1;33mL:WHO_MODULEIN [37mLAWHO_LOCATION
+LISTLIN3 {[0m[1;32mL"WHO_CHANNEL [0mN!OL/WHO_USERIDN!X [1;33mL:WHO_MODULEIN [37mLAWHO_LOCATION
 [0m} T Third who's online listing format user line
 
   This is the fourth of up to four who's on listings.
@@ -233,7 +233,7 @@ LISTLIN3 {[0m[1;32mL"WHO_CHANNEL [0mN!OL/WHO_USERIDN!X[1;33mL:WHO_M
     WHO_SYSLOAD    - system load information
     WHO_MODULEIN   - module location (filtered!)
 
-LISTLIN4 {[0;1;32mL"WHO_CHANNEL  [0mN!OL<WHO_USERIDN!X[1;35mL!WHO_GENDERCHAR[0m/[1;33mL#WHO_AGE  } T Fourth who's online listing format user line
+LISTLIN4 {[0;1;32mL"WHO_CHANNEL  [0mN!OL<WHO_USERIDN!X [1;35mL!WHO_GENDERCHAR[0m/[1;33mL#WHO_AGE  } T Fourth who's online listing format user line
 
   This is the first of up to four who's on listings.
   This is the footer (displays AFTER the user lines)
