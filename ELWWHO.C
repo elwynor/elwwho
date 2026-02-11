@@ -713,7 +713,7 @@ VOID EXPORT showWhosOn(SHORT which,SHORT mode,CHAR *filterText)
     return;
   } 
 
-  // reset the channel's vda showable array
+  // reset the showable array
   //memset(showable, 0, nterms * sizeof(SHORT));
   memset(showable_array, 0, sizeof(showable_array));
 
