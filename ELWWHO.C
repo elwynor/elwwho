@@ -193,7 +193,9 @@ CHAR *dayname[] = {
      "Saturday"
 };
 
-#define showable ((SHORT *)vdaptr) // use to see if the channel is displayable or not (used for aggregate functions)
+// #define showable ((SHORT *)vdaptr) // use to see if the channel is displayable or not (used for aggregate functions) - Removed as usage of VDA not required
+static SHORT showable_array[256];
+#define showable showable_array
 
 //
 // end declaration section, begin code
@@ -712,7 +714,8 @@ VOID EXPORT showWhosOn(SHORT which,SHORT mode,CHAR *filterText)
   } 
 
   // reset the channel's vda showable array
-  memset(showable, 0, nterms * sizeof(SHORT));
+  //memset(showable, 0, nterms * sizeof(SHORT));
+  memset(showable_array, 0, sizeof(showable_array));
 
   // repopulate the array  
   for (othusn=0 ; othusn < nterms ; othusn++ ) {
