@@ -5,8 +5,8 @@
  | |/ |/ / / / / /_/ / (__  )  / /_/ / / / /
  |__/|__/_/ /_/\____/ /____/   \____/_/ /_/
                                                                 
-                version 0.1
-  Copyright (c) 2025 Elwynor Technologies
+                version 0.2
+  Copyright (c) 2026 Elwynor Technologies
 </pre>
 
 ## WHAT IS WHO'S ON?

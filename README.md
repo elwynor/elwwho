@@ -5,8 +5,8 @@
  | |/ |/ / / / / /_/ / (__  )  / /_/ / / / /
  |__/|__/_/ /_/\____/ /____/   \____/_/ /_/
                                                                 
-                version 0.1
-  Copyright (c) 2025 Elwynor Technologies
+                version 0.2
+  Copyright (c) 2026 Elwynor Technologies
 </pre>
 
 ## WHAT IS WHO'S ON?
@@ -23,6 +23,11 @@
  Simply unzip the archive to your BBS server directory. If you'd like
  the module to work as a menu item, you can add it to your menu. But
  it should work just fine as a global-only product.
+ 
+ Configure the global character, whether you want to see a listing at
+ logon (and which one), and the up to 5 filter strings in LEVEL4.
+ 
+ Customize the 4 listing formats and other text in LEVEL6.
 
 ## MODULE HISTORY
  
@@ -30,7 +35,7 @@
  January and February 2025 in response to a request from Brian Morgan
  of The Penalty Box BBS, who wanted a Who's On listing that filtered out
  certain modules due to significant users of MUD games. Rick wrote it
- to work with WG2, WG32, and BBSV10.
+ to work with WG2, WG32, and BBSV10 and released it as open source.
  
 ## LICENSE
 

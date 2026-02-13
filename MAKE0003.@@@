@@ -1,0 +1,5 @@
+  -DGCV2 -DGCDOS -DGCDOSP -DGCV2S -DWORLDGROUP -I.
+ -ID:\WG\WGDEV\INC;.\GCBUILD\WG2P;D:\WG\WGDEV\INC\MSG\WG2;D:\WG\WGDEV\SRC;
+ -ID:\WG\WGDEV\SRC;D:\WG\BC45\include;D:\WG\RUN286\inc
+ -n.\GCBUILD\WG2P
+ -DPACSOFT -2 -P-c -d -DTSC_C -mh! -h -Tt  -K -c -Ob -Oe -Os -k- -Ol -Op -g10  -weas -wpin -wamb -wamp -wdef -wnod -w-pro  -wstv -wcln -wsig -wucp -w-eff
